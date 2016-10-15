@@ -1,0 +1,269 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  background: #faf7f2;
+  font-family: 'baskerville', serif;
+  font-size: 20px;
+  line-height: 150%;
+  color: #333;
+}
+
+a {
+  color: #3795ff;
+  text-decoration: none;
+  border-bottom: 1px solid #6fb1fb;
+}
+
+.container {
+  padding: 40px 20%;
+}
+
+#nav {
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0 20%;
+  white-space: nowrap;
+}
+
+.fixed_nav #nav ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+}
+
+
+#nav ul {
+  margin: 0;
+  background: #faf7f2;
+  z-index: 1;
+}
+
+
+#nav li {
+  list-style: none;
+  display: inline;
+  margin: 0 0.5em;
+}
+
+
+#nav a.active {
+  color: #333;
+  border-bottom: none;
+}
+
+
+#clients, #about {
+  background: #fff;
+  overflow: hidden;
+}
+
+.client {
+  padding: 40px 20% 40px 55%;
+  position: relative;
+  border-top: 1px solid #ddd;
+}
+
+
+.client .illustrations {
+  position: absolute;
+  padding-top: 40px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  text-align: center;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+
+.client:nth-child(2n+1) {
+  padding: 40px 55% 40px 20%;
+}
+
+.client:nth-child(2n+1) .illustrations {
+  left: auto;
+  right: 0;
+}
+
+
+.client .illustrations img.logo {
+  width: auto;
+  height: 8em;
+  max-width: 70%;
+}
+
+
+.client.estee .illustrations img.logo {
+  height: 3em;
+}
+
+
+.client .illustrations img.mobile {
+  position: absolute;
+  bottom: -50px;
+  right: 20%;
+  width: 25%;
+  height: auto;
+  min-width: 125px;
+}
+
+
+
+
+
+.client.lovethis .illustrations img.mobile {
+  left: 5%;
+  right: auto;
+}
+
+
+
+.client.carling .illustrations img.mobile {
+  left: 15%;
+  right: auto;
+  bottom: -120px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'futura-pt', sans-serif;
+  text-transform: uppercase;
+  color: #ef701c;
+}
+
+
+p, ul {
+  margin: 1em 0 0;
+}
+
+h1 {
+  text-align: center;
+  line-height: 95%;
+  color: #999;
+}
+
+h1 .name {
+  font-size: 2.25em;
+  color: #ef701c;
+  line-height: 130%;
+  white-space: nowrap;
+}
+
+
+#footer {
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 970px) {
+
+  h1 {
+    font-size: 1.75em;
+  }
+}
+@media screen and (max-width: 860px) {
+  .container {
+    padding: 40px 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .client {
+    padding: 40px 10%;
+  }
+
+  .client .illustrations {
+    display: block;
+    width: auto;
+    height: auto;
+    position: relative;
+    left: auto;
+    top: auto;
+    bottom: auto;
+  }
+
+  .client .illustrations img.logo {
+    max-width: 80%;
+  }
+
+
+  .client .illustrations.screenshot {
+    height: 15em;
+  }
+
+
+  .client:nth-child(2n+1) {
+    padding: 40px 10%;
+  }
+
+
+  .client:nth-child(2n+1) .illustrations {
+    right: auto;
+  }
+}
+@media screen and (max-width: 640px) {
+
+  h1 {
+    font-size: 1.25em;
+  }
+
+  h1 .name {
+    font-size: 2.5em;
+  }
+
+  #nav {
+    font-size: 1.25em;
+    padding: 0 10%;
+  }
+
+  #nav li {
+    margin: 0 0 0 0.2em;
+  }
+
+
+  #nav li:first-child {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* line 93, /Users/deepakshinde/work/rails/LeaveManagement/app/assets/stylesheets/application.scss */
+  h1 {
+    font-size: 1em;
+  }
+
+  /* line 94, /Users/deepakshinde/work/rails/LeaveManagement/app/assets/stylesheets/application.scss */
+  h1 .name {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 98, /Users/deepakshinde/work/rails/LeaveManagement/app/assets/stylesheets/application.scss */
+  #nav {
+    font-size: 1em;
+  }
+
+  /* line 99, /Users/deepakshinde/work/rails/LeaveManagement/app/assets/stylesheets/application.scss */
+  #nav li:first-child {
+    margin: 0;
+  }
+
+  /* line 100, /Users/deepakshinde/work/rails/LeaveManagement/app/assets/stylesheets/application.scss */
+  .client .illustrations.screenshot {
+    height: 9em;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 104, /Users/deepakshinde/work/rails/LeaveManagement/app/assets/stylesheets/application.scss */
+  h1 .name {
+    font-size: 1.75em;
+  }
+}
